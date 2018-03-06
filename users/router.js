@@ -6,7 +6,6 @@ const { User } = require('./models');
 const { Question } = require('../questions/models');
 const router = express.Router();
 const jsonParser = bodyParser.json();
-const { helpers, questionQueue, setQuestions } = require('../questions');
 
 //Register new users
 

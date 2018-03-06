@@ -38,8 +38,6 @@ const UserSchema = mongoose.Schema({
   
 });
 
-//performance is an array with node objects containing info about the word/response/correct  
-
 UserSchema.methods.apiRepr = function(){
   return {
     id: this._id,

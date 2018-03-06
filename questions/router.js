@@ -6,7 +6,6 @@ const passport = require('passport');
 const { User } = require('../users/models');
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
-const { questionQueue, helpers } = require('./algorithm');
 
 const jwtAuth = passport.authenticate('jwt', { session: false});
 
