@@ -44,6 +44,7 @@ router.post('/responses', jwtAuth, jsonParser, (req, res) => {
 
       answeredQuestion.attempts++;
       console.log(answeredQuestion.attempts);
+      console.log(answeredQuestion.correctCount)
 
 
       if (answeredQuestion.answer === response) {
