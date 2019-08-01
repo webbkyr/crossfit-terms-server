@@ -27,7 +27,6 @@ router.get('/questions', jwtAuth, (req, res) => {
 router.get('/next', jwtAuth, (req, res) => {
   User.findById(req.user.id) 
     .then(user => {
-      // console.log('USER HEAD IN NEXT ENDPOINT>>>>>>', user.head)
       res.json(user.performance[user.head]);
     });
 });
